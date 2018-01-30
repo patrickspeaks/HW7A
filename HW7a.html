@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>HW7</title>
+</head>
+
+<body>
+    <h3>Homework assignment 7a</h3>
+
+
+
+
+    <script>
+        function startProcess() {
+            
+            for (var i = 1; i <= 10; i++) {
+
+                var length = i + 2;
+                var width = i + 1;
+                var height = i + 2;
+                var myvolume = getVolume(length, width, height);
+                             
+
+                if (myvolume >= 60 && myvolume <= 70) {
+                    document.write(" Small Volume: " + myvolume);
+                }
+
+                else if (myvolume >= 71 && myvolume <= 80) {
+                    document.write(" Medium Volume: " + myvolume);
+                }
+                else if (myvolume >= 81 && myvolume <= 90) {
+                    document.write(" Large Volume: " + myvolume);
+                }
+                else if (myvolume >= 91 && myvolume <= 100) {
+                    document.write(" Extra Large Volume: " + myvolume);
+                }
+
+                else {
+                    document.write(" Other Volume: " + myvolume);
+                }
+
+
+                
+                
+                
+            }
+        }
+
+        function getVolume(l, w, h) {
+            var result = l * w * h;
+            return result
+        }
+
+        
+        startProcess()
+            ;
+
+
+
+        
+    </script>
+</body>
+</html>
